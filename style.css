@@ -32,10 +32,12 @@ img {
     background-color: #ffffff;
     display: grid;
     align-content: start;
-    gap: 1rem;
+    /* gap: 1rem; */
     padding: 3rem;
     border: 1px solid rgba(128, 128, 128, 0.348);
-    border-radius: 12px;
+    border-radius: 4px;
+    overflow-y: scroll;
+
 }
 
 .left-menu {
@@ -46,13 +48,13 @@ img {
     gap: 0.5rem;
     padding: 3rem;
     border: 1px solid rgba(128, 128, 128, 0.348);
-    border-radius: 12px;
+    border-radius: 4px;
 }
 .inbox {
     border: 1px solid rgba(128, 128, 128, 0.348);
 
-    border-radius: 12px;
-    padding: 5px;
+    border-radius: 4px;
+    padding: 3px;
     display: grid;
     grid-template-columns: 30px 1fr auto;
     gap: 1rem;
@@ -62,10 +64,16 @@ img {
     /* outline: none; */
 }
 .right-menu {
-    background-color: rgb(241, 241, 241);
+    background-color: #ffffff;
     grid-area: right-menu;
-    border-radius: 12px;
+    border-radius: 4px;
     border: 1px solid rgba(128, 128, 128, 0.348);
+    /* padding: 1rem; */
+    /* gap: 1rem; */
+    display: grid;
+    align-content: center;
+    gap: 2rem;
+    padding: 0.1rem 3rem;
 }
 
 .logo {
@@ -82,9 +90,9 @@ button{
 }
 
 .emails {
-    border-radius: 12px;
-    padding: 0px;
-
+    border-radius: 4px;
+    padding: 0 10px;
+    border: 1px solid #e2e4e6;
     display: grid;
     grid-template-columns: 0px 2rem 1fr 2fr;
     gap: 1rem;
@@ -92,10 +100,10 @@ button{
 }
 .search-bar {
     grid-area: search-bar;
-    /* grid-template-columns:1fr; */
+    /* grid-template-columns:; */
     display: grid;
     place-items: center;
-    /* padding-left: 9rem; */
+    padding: 0 2rem;
 }
 /* needs work */
 .user-settings {
@@ -107,21 +115,21 @@ button{
     padding-right: 2rem;
 }
 .search-bar form{
-    width: auto;
+    /* width:auto; */
 }
 /* fix the width */
 .search-bar .header__search__bar {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
 
     background-color: #f1f3f4;
     height: 3rem;
-    width: 1fr;
+    width: 100%;
     border-radius: 5px;
     border: none;
 
     /* font-size: 2rem; */
 }
-/* .idk-logo{
+.idk-logo{
     display: grid;
 }
 .settings{
@@ -130,7 +138,25 @@ button{
 }
 .user-input{
     display: grid;
-} */
+}
 
 
 /* add the right menu */
+.quick-settings{
+    display: grid;
+    gap: 1rem;
+    place-items: center;
+}
+.quick-settings .right-menu__settings{
+    text-decoration: none;
+    /* height: 2rem; */
+    background-color: #ffffff;
+    border: 1px solid #e2e4e6;
+    padding: 1rem;
+    /* margin-top: 1rem; */
+    color: #777879;
+}
+.density{
+    display: grid;
+    gap: 1rem;
+}
