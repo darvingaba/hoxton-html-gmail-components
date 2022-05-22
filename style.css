@@ -114,9 +114,7 @@ button{
     place-items: center;
     padding-right: 2rem;
 }
-.search-bar form{
-    /* width:auto; */
-}
+
 /* fix the width */
 .search-bar .header__search__bar {
     padding: 0 1rem;
@@ -155,8 +153,51 @@ button{
     padding: 1rem;
     /* margin-top: 1rem; */
     color: #777879;
+    border-radius: 4px;
 }
 .density{
     display: grid;
     gap: 1rem;
+}
+@media screen and (max-width:768px) {
+    .main-container {
+    grid-template:
+    "header header header" 70px
+    "left-menu email-container email-container " 1fr/
+    auto 1fr auto;
+    }
+    .header {
+    grid-template:
+    "search-bar search-bar search-bar" 3rem/
+    auto 1fr auto;
+    }
+    .right-menu{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .user-settings{
+        display: none;
+    }
+}
+@media screen and (max-width:655px) {
+    .main-container {
+    grid-template:
+    "header header header" 70px
+    "email-container email-container email-container " 1fr/
+    auto 1fr auto;
+    }
+    .inbox{
+        display: none;
+    }
+    .right-menu{
+        display: none;
+    }
+    .user-settings{
+        display: none;
+    }
+    .email-container {
+    padding: 0.2rem;
+    }
 }
